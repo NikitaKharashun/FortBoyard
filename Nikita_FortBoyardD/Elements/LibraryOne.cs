@@ -67,7 +67,7 @@ namespace Nikita_FortBoyardD.Elements
 
             Console.WriteLine(new string('-', 32));
            
-            string key = "19610412";
+            int key = 19610412;
 
             Cipher(Info(), key);
 
@@ -75,11 +75,11 @@ namespace Nikita_FortBoyardD.Elements
             Console.WriteLine(new string('-', 32));
         }
 
-        private static void Cipher(string text, string secretKey)
+        private static void Cipher(string text, int secretKey)
         {
             var result = string.Empty;
             foreach (var item in text)        
-                result += Convert.ToString((object)(char)(item ^ 19610412));
+                result += Convert.ToString((object)(char)(item ^ secretKey));
             
             Console.WriteLine(result);
         }
