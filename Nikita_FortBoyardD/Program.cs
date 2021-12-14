@@ -11,11 +11,6 @@ using Nikita_FortBoyardD.Elements;
 
 namespace FortBoyard
 {
-    class CityComparer : IComparer<object>
-    {
-        int IComparer<object>.Compare(object x, object y)  => (x as dynamic).Name.CompareTo((y as dynamic).Name);
-    }
-
     class Program
     {
         static void Main(string[] args)
